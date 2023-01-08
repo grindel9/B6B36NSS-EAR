@@ -1,0 +1,2 @@
+INSERT INTO public.topic (id, description, header, ancestor_topic_id, department_id, teacher_id) VALUES (1, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin.', 'how to Java', null, 1, 1);
+INSERT INTO public.topic (id, description, header, ancestor_topic_id, department_id, teacher_id) VALUES (2, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc dapibus tortor vel mi dapibus sollicitudin.', 'how to java', 1, 1, 1);
