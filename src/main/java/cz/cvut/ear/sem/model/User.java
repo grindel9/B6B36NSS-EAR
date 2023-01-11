@@ -36,7 +36,6 @@ public abstract class User extends AbstractEntity implements UserDetails {
 
     @Basic(optional = false)
     @Column(nullable = false)
-    @JsonIgnore
     private String password;
 
     @Basic(optional = false)
