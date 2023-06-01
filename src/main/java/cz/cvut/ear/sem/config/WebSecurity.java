@@ -43,6 +43,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/student").hasAnyAuthority(Authority.TEACHER.toString(), Authority.STUDENT.toString())
                 .antMatchers("/topic").hasAnyAuthority(Authority.TEACHER.toString(), Authority.STUDENT.toString())
                 .antMatchers("/user/*").permitAll()
+                .antMatchers("/health").permitAll()
                 .anyRequest().authenticated()
                 .and().addFilterBefore(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class);
     }
